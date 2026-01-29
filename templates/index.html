@@ -1,0 +1,115 @@
+{% extends "base.html" %}
+
+{% block title %}DAGOS BARF FOODS | Alimentación BARF en Bogotá{% endblock %}
+{% block description %}DAGOS BARF FOODS: dieta BARF natural para perros. Entrega en Bogotá y Soacha.{% endblock %}
+
+{% block content %}
+
+<!-- Header -->
+<header class="header">
+  <div class="container header__inner">
+    <a class="brand" href="#inicio">
+      <div class="brand__logo">DBF</div>
+      <div class="brand__text">
+        <span class="brand__name">DAGOS BARF FOODS</span>
+        <span class="brand__tag">BARF natural • Bogotá</span>
+      </div>
+    </a>
+
+    <nav class="nav">
+      <a href="#producto">Producto</a>
+      <a href="#barf">Qué es BARF</a>
+      <a href="#entregas">Entregas</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+
+    <a class="btn btn--gold btn-whatsapp">Comprar por WhatsApp</a>
+  </div>
+</header>
+
+<!-- Hero -->
+<section id="inicio" class="hero_bg">
+  <div class="hero_overlay">
+    <div class="hero_text">
+
+      <h1>
+        Alimentación <span>BARF</span><br>
+        en Bogotá
+      </h1>
+
+      <p>
+        Nutrición 100% natural para tu mascota.
+      </p>
+
+      <a class="btn btn--gold btn-whatsapp">
+        Pedir por WhatsApp
+      </a>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- Producto -->
+<section id="producto" class="section">
+  <div class="container">
+
+    <div class="section__head">
+      <h2>Producto destacado</h2>
+      <p>Dieta tradicional de pollo para todas las etapas.</p>
+    </div>
+
+    <div class="card product">
+
+      <div class="product__media">
+        <img
+          src="{{ url_for('static', filename='img/dieta-pollo-500g.webp') }}"
+          alt="Dieta BARF Pollo 500g"
+        >
+      </div>
+
+      <div class="product__info">
+        <h3>Dieta Tradicional Pollo</h3>
+
+        <div class="specs">
+          <div class="spec"><span>Presentación</span>500 g</div>
+          <div class="spec"><span>Mascota</span>Perros</div>
+          <div class="spec"><span>Edad</span>Todas</div>
+          <div class="spec"><span>Precio</span>$3.800 / libra</div>
+        </div>
+
+        <h4>Ingredientes</h4>
+        <ul class="list">
+          <li>Carne de pollo</li>
+          <li>Hueso carnoso</li>
+          <li>Vísceras</li>
+          <li>Manzana y banano</li>
+          <li>Zanahoria y espinaca</li>
+        </ul>
+
+        <div class="product__actions">
+          <a class="btn btn--gold btn-whatsapp">Pedir por WhatsApp</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Contacto -->
+<section id="contacto" class="section">
+  <div class="container">
+    <h2>Contacto</h2>
+    <a class="btn btn--gold btn-whatsapp">Hablar por WhatsApp</a>
+    <p>Email: <a href="mailto:dagosbarffood@gmail.com">dagosbarffood@gmail.com</a></p>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <strong>DAGOS BARF FOODS</strong> – Bogotá<br>
+    © {{ current_year }}
+  </div>
+</footer>
+
+{% endblock %}
