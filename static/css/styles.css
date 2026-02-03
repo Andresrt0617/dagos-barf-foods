@@ -208,6 +208,21 @@ h1{
   grid-template-columns: .9fr 1.1fr;
   gap: 16px;
 }
+.product__media{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.product__media img{
+  width: 100%;
+  max-width: 520px;
+  max-height: 360px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 16px;
+  display:block;
+  background: rgba(255,255,255,.02);
+}
 .product__info h3{ margin: 0 0 10px; font-size: 18px; }
 .product__info h4{ margin: 14px 0 8px; font-size: 15px; }
 
@@ -454,4 +469,3 @@ h1{
     font-size: 32px;
   }
 }
-
