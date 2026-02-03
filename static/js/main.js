@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const phone = "573232239511";
+  const phone = "573112502127";
   const message = encodeURIComponent(
     "Hola 👋 Quiero información sobre la dieta BARF de Dagos Barf Foods"
   );
