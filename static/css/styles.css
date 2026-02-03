@@ -215,8 +215,8 @@ h1{
 }
 .product__media img{
   width: 100%;
-  max-width: 520px;
-  max-height: 360px;
+  max-width: 380px;
+  max-height: 260px;
   height: auto;
   object-fit: contain;
   border-radius: 16px;
