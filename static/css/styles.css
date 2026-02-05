@@ -331,17 +331,59 @@ h1{
 .footer__meta{ display:flex; align-items:center; gap: 10px; }
 .dot{ opacity: .6; }
 
-.wa-float{
+.whatsapp-float{
   position: fixed;
   right: 18px;
   bottom: 18px;
-  padding: 12px 14px;
+  z-index: 60;
+}
+.whatsapp-float a{
+  display:grid;
+  place-items:center;
+  width: 56px;
+  height: 56px;
   border-radius: 999px;
   background: linear-gradient(180deg, var(--gold), var(--gold-2));
-  color: #111;
   box-shadow: var(--shadow);
-  border: 1px solid rgba(0,0,0,.2);
-  font-size: 13px;
+  border: 1px solid rgba(0,0,0,.25);
+  transition: transform .12s ease, box-shadow .2s ease, opacity .2s ease;
+}
+.whatsapp-float img{
+  width: 28px;
+  height: 28px;
+  display:block;
+}
+.whatsapp-float a:hover{ transform: translateY(-2px); opacity: .98; }
+
+.social-floats{
+  position: fixed;
+  right: 18px;
+  bottom: 86px;
+  display:flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 60;
+}
+.social-floats a{
+  display:grid;
+  place-items:center;
+  width: 46px;
+  height: 46px;
+  border-radius: 999px;
+  background: rgba(255,255,255,.06);
+  border: 1px solid var(--border);
+  backdrop-filter: blur(6px);
+  transition: transform .12s ease, background .2s ease, border-color .2s ease;
+}
+.social-floats img{
+  width: 22px;
+  height: 22px;
+  display:block;
+}
+.social-floats a:hover{
+  transform: translateY(-2px);
+  background: rgba(255,255,255,.12);
+  border-color: rgba(255,255,255,.25);
 }
 
 /* Responsive */
@@ -352,6 +394,8 @@ h1{
   .grid-2{ grid-template-columns: 1fr; }
   .nav{ display:none; }
   .header__cta{ display:none; }
+  .whatsapp-float{ right: 12px; bottom: 12px; }
+  .social-floats{ right: 12px; bottom: 76px; }
 }
 /* =========================
    HERO RESPONSIVE MOBILE
