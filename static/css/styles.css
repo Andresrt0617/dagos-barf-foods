@@ -343,7 +343,7 @@ h1{
   width: 56px;
   height: 56px;
   border-radius: 999px;
-  background: linear-gradient(180deg, #25D366, #1EBE5D);
+  background: linear-gradient(180deg, #d3c725, #bbae3a);
   box-shadow: var(--shadow);
   border: 1px solid rgba(0,0,0,.25);
   transition: transform .12s ease, box-shadow .2s ease, opacity .2s ease;
